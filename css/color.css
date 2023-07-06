@@ -1,0 +1,21 @@
+/* Color Theme Swatches in Hex */
+:root{
+    --Nomasei_highlight_color: #D9B70D;
+    --Nomasei_low_highlight_color: #A69337;
+    --Nomasei_low_default_color: #403C35;
+    --Nomasei_char_color: #D9D9D9;
+    --Nomasei_default_color: #0D0D0D;
+}
+
+.highlight_color { color: rgba(216, 182, 13, 1); }
+.low_highlight_color { color: rgba(165, 147, 54, 1); }
+.low_default_color { color: rgba(63, 59, 52, 1); }
+.char_color { color: rgba(216, 216, 216, 1); }
+.default_color { color: rgba(12, 12, 12, 1); }
+
+.Nomasei-1-hsla { color: hsla(50, 88, 45, 1); }
+.Nomasei-2-hsla { color: hsla(50, 50, 43, 1); }
+.Nomasei-3-hsla { color: hsla(39, 9, 22, 1); }
+.Nomasei-4-hsla { color: hsla(0, 0, 85, 1); }
+.Nomasei-5-hsla { color: hsla(0, 0, 5, 1); } 
+

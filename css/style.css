@@ -1,0 +1,102 @@
+@import url("color.css");
+
+/* .highlight_color { color: rgba(216, 182, 13, 1); }
+.low_highlight_color { color: rgba(165, 147, 54, 1); }
+.low_default_color { color: rgba(63, 59, 52, 1); }
+.char_color { color: rgba(216, 216, 216, 1); }
+.default_color { color: rgba(12, 12, 12, 1); } */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--Nomasei_default_color);
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 15vh;
+    border-bottom: 2px solid var(--Nomasei_low_default_color);
+}
+.default_word{
+    color: var(--Nomasei_highlight_color);
+}
+
+div{
+    display: block;
+}
+
+.pull-right{
+    float: right!important
+}
+
+/* 로그인 창 css */
+div#login{
+    box-sizing: border-box;
+    /* height: 75vh; */
+    /* padding: 0px 30vw; */
+    padding-top: 7vh;
+}
+
+div#login fieldset{
+    border: solid 2px var(--Nomasei_low_default_color);
+}
+div#login form{
+    max-width: 300px;
+    min-width: 300px;
+}
+.login_header{
+    color: var(--Nomasei_highlight_color);
+    text-align: center;
+    margin-bottom: 35px;
+    border-bottom: solid 1px var(--Nomasei_low_default_color);
+}
+
+
+/* 로그인 data input관련 */
+.login_input_group{
+    display: flex;
+    position: relative;
+    border-collapse: separate;
+    margin-bottom: 20px;
+    border-radius: 0;
+    
+}
+.login_input_img_frame{
+    background-color: var(--Nomasei_low_default_color);
+    border: 1px solid var(--Nomasei_highlight_color);
+    border-right: 0;
+    padding: 6px 12px;
+}
+.login_input_form{
+    background-color: var(--Nomasei_low_default_color);
+    box-shadow: none;
+    border:solid var(--Nomasei_highlight_color) 1px;
+    border-radius: 0;
+    padding: 6px 12px;
+}
+input.login_input_form::placeholder{
+    color: var(--Nomasei_highlight_color);
+}
+
+input:focus{
+    outline: solid 1px var(--Nomasei_highlight_color);
+}
+#submit_button{
+    color: var(--Nomasei_default_color);
+    background: var(--Nomasei_low_highlight_color);
+    border: solid, var(--Nomasei_default_color);
+    box-shadow: 0;
+    border-radius: 0;
+}
+div#login hr{
+    border:solid 1px var(--Nomasei_low_default_color);
+}
+div#login p{
+    color: var(--Nomasei_char_color);
+    font-size: 13px;
+}
