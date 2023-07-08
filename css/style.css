@@ -34,6 +34,12 @@ div{
     float: right!important
 }
 
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 /* 로그인 창 css */
 div#login{
     box-sizing: border-box;
@@ -56,21 +62,40 @@ div#login form{
     border-bottom: solid 1px var(--Nomasei_low_default_color);
 }
 
+.login_input_img_frame{
+    display: inline-block;
+    background-color: var(--Nomasei_low_default_color);
+    border: 1px solid var(--Nomasei_highlight_color);
+    border-right: 0;
+    padding: 0;
+    max-height: 35px;
+}
 
+.login_img{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    border: 0;
+    padding: 10%;
+    margin: 0px;
+    width: 35px;
+    height: auto;
+}
+
+div#login hr{
+    border:solid 1px var(--Nomasei_low_default_color);
+}
+div#login p{
+    color: var(--Nomasei_char_color);
+    font-size: 13px;
+}
 /* 로그인 data input관련 */
 .login_input_group{
     display: flex;
     position: relative;
-    border-collapse: separate;
     margin-bottom: 20px;
     border-radius: 0;
     
-}
-.login_input_img_frame{
-    background-color: var(--Nomasei_low_default_color);
-    border: 1px solid var(--Nomasei_highlight_color);
-    border-right: 0;
-    padding: 6px 12px;
 }
 .login_input_form{
     background-color: var(--Nomasei_low_default_color);
@@ -78,6 +103,8 @@ div#login form{
     border:solid var(--Nomasei_highlight_color) 1px;
     border-radius: 0;
     padding: 6px 12px;
+    height: 35px;
+    flex-grow: 1;
 }
 input.login_input_form::placeholder{
     color: var(--Nomasei_highlight_color);
@@ -92,11 +119,4 @@ input:focus{
     border: solid, var(--Nomasei_default_color);
     box-shadow: 0;
     border-radius: 0;
-}
-div#login hr{
-    border:solid 1px var(--Nomasei_low_default_color);
-}
-div#login p{
-    color: var(--Nomasei_char_color);
-    font-size: 13px;
 }
