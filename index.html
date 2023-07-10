@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>모의투자 시뮬레이션</title>
 </head>
 <body>
     <header>
         <a href="">모투자!</a>
     </header>
-    <div id="login", align="center">
+    <div id="main", align="center">
+        <div id="login">
         <form action="">
             <fieldset>
                 <div class="login_header">
@@ -29,13 +31,14 @@
                     <input type="password" placeholder="비밀번호" name="login_user_password" class="login_input_form">
                 </div>
                 <div class="row">
-                    <button id="submit_button" type="submit" class="pull-right">로그인</button>
+                    <button id="submit_button" type="submit" data-loading-text="로그인 중..." class="pull-right">로그인</button>
                 </div>
                 <hr>
-                <p>아이디나 비밀번호를 잊었을 때는, 여기를 눌러주세요.</p>
-                <p>회원 가입은 여기에서 할 수 있습니다.</p> 
+                <p>아이디나 비밀번호를 잊었을 때는,<br><a href="">여기</a>를 눌러주세요.</p>
+                <p>회원 가입은 <a href="">여기</a>에서 할 수 있습니다.</p> 
             </fieldset>
-        </form>   
+        </form>
+        </div> 
     </div>
     <footer>
         
