@@ -1,0 +1,91 @@
+/* 로그인 창 css */
+#login{
+    width: 100%;
+    height: 100%;
+}
+div#login fieldset{
+    border: solid 2px var(--low_default_color);
+}
+div#login form{
+    max-width: 300px;
+    min-width: 300px;
+}
+.login_header{
+    color: var(--highlight_color);
+    text-align: center;
+    margin-bottom: 35px;
+    border-bottom: solid 1px var(--low_default_color);
+}
+
+.login_input_img_frame{
+    display: inline-block;
+    background-color: var(--low_default_color);
+    border: 1px solid var(--highlight_color);
+    border-right: 0;
+    padding: 0;
+    max-height: 35px;
+}
+
+.login_img{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    border: 0;
+    padding: 10%;
+    margin: 0px;
+    width: 35px;
+    height: auto;
+}
+
+div#login hr{
+    margin-top: 20px;
+    border:solid 1px var(--low_default_color);
+}
+div#login p{
+    margin: 0 0 10px;
+    line-height: 1.6;
+    color: var(--char_color);
+    font-size: 13px;
+}
+/* 로그인 data input관련 */
+.login_input_group{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 0;
+    
+}
+.login_input_form{
+    background-color: var(--low_default_color);
+    box-shadow: none;
+    border:solid var(--highlight_color) 1px;
+    border-radius: 0;
+    padding: 6px 12px;
+    height: 35px;
+    flex-grow: 1;
+}
+input.login_input_form::placeholder{
+    color: var(--highlight_color);
+}
+
+input:focus{
+    outline: solid 1px var(--highlight_color);
+}
+input:focus::placeholder{
+    color: var(--low_highlight_color);
+}
+
+#submit_button{
+    box-sizing: border-box;
+    color: var(--highlight_color);
+    background: var(--low_default_color);
+    border-radius: 0;
+    border: 1px solid var(--highlight_color);
+    padding: 6px 13px;
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: 400;
+}
+#submit_button:hover{
+    outline: solid 1px var(--highlight_color);
+}
