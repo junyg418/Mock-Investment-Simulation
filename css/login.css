@@ -47,6 +47,15 @@ div#login p{
     color: var(--char_color);
     font-size: 13px;
 }
+
+#login a{
+    color: var(--highlight_color);
+    text-decoration: none;
+}
+#login a:hover{
+    font-weight: bold;
+}
+
 /* 로그인 data input관련 */
 .login_input_group{
     display: flex;

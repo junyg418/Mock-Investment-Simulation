@@ -10,26 +10,6 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: var(--default_color);
-    margin: 0;
-    padding: 0;
-}
-header{
-    height: 15vh;
-    border-bottom: 2px solid var(--low_default_color);
-}
-.default_word{
-    color: var(--highlight_color);
-}
-div#main{
-    box-sizing: border-box;
-    padding-top: 7vh;
-}
-
 div{
     display: block;
 }
@@ -43,10 +23,66 @@ div{
     flex-direction: row-reverse;
 }
 
-a{
+.default_word{
     color: var(--highlight_color);
-    text-decoration: none;
 }
-a:hover{
-    font-weight: bold;
+
+/* header 템플릿 */
+header{
+    display: flex;
+    position: relative;
+    overflow: visible;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    border-bottom: 2px solid var(--low_default_color);
+}
+div#logo img{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    align-self: flex-start;
+    max-height: 105px;
+    width: auto;
+}
+
+div#nav{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+ul#nav_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+ul#nav_list>li{
+    width: 100px;
+}
+div#nav a{
+    padding: 9px 25px 9px 25px;
+    text-decoration: none;
+    color: var(--highlight_color);
+}
+
+div#nav a:hover{
+    border-bottom: solid 2px var(--highlight_color);
+}
+
+/* body 템플릿 */
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--default_color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+div#main{
+    box-sizing: border-box;
+    padding-top: 7vh;
 }
